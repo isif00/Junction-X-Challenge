@@ -1,7 +1,6 @@
-
-document.getElementById("Bom").addEventListener("click", function() {
+function scrollDown() {
     window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    })
-})
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  }

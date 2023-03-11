@@ -114,7 +114,7 @@ header {
   
 }
 
-button{
+header button{
     width: 100px;
     height: 100px;
     padding: 15px 0;
@@ -144,11 +144,11 @@ span{
     transition: 0.5s;
 }
 
-button:hover span{
+header button:hover span{
     width: 100%;
 }
 
-button:hover{
+header button:hover{
     border: none;
 }
 
@@ -161,3 +161,79 @@ button:hover{
     height: 10%;
     width: 10%;
 }
+
+.chat-box {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    top: 29%;
+    left: 34%;
+
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    z-index: 999;
+  
+}
+
+.header {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .chat-area {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+  }
+  
+  .chat-message p {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+  }
+  
+  .input-area {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    top: 25%;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-area button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  .open-btn{
+    margin: 50px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  

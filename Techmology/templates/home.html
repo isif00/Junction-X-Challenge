@@ -9,9 +9,24 @@
         <div class="image">
             <img src="{% static 'img/Mobot.png' %}" alt="" class="logo">
         </div>
-        <button id="Bom"><span></span></button>
+        <button onclick="scrollDown()">scrollDown<span></span></button>
     </header>
-
+    <div class="chat-box">
+      <div class="chat-area" id="chat-area">
+        <div class="chat-message">
+          <p>{{ formatted_response }}</p>
+        </div>
+      </div>
+      <div class="input-area">
+        <form method="post">
+          {% csrf_token %}
+    
+          {{ form }}
+    
+          <button id="send-btn" onclick="sendMessage()">Send</button>
+        </form>  
+      </div>
+    </div>
 </div>
 
 
