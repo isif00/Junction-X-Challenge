@@ -4,15 +4,24 @@
     font-family: comfortaa;
 }
 
+#Banner {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .navbar{
+    position: fixed;
     display: flex; 
     width: 100%;
     margin: 0;
     padding: 20px 0;
     align-items: center;
-    justify-content: space-between;
-    position:sticky ;
-  
+    justify-content: space-between; 
+    background-color: aliceblue; 
+    z-index: 100;
 }
 
 
@@ -20,7 +29,7 @@
     content: '';
     height: 0%;
     width: 100%;
-    background-color: rgba(13, 228, 114, 0.4); 
+    background-color: #9bbaed;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -30,7 +39,6 @@
 
 .navbar:hover::after{
     height: 100%;
-    box-shadow: 0px 10px 10px rgb(157, 205, 163);
 }
 
 .navbar ul{
@@ -55,7 +63,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background-color: #3EB073;
+    background-color: #76388D;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -79,11 +87,77 @@
 
 }
 
-.card {
-    border: 3px solid #3EB073;
-    height: 350px;
-    width: 40%;
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
     position: relative;
-    top: 16%;
-    left: 5%;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+
+}
+
+.image img{
+    position: relative;
+    height: 51%;
+    width: 56%;
+    top: 50%;
+    left: 27%;
+    cursor: pointer;
+  
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    border: 2px solid #009680;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 20%;
+    left: -33%;
+  
+}
+
+span{
+    border-radius: 25px;
+    background: #009680;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.tools {
+    position: relative;
+}
+
+.tools img{
+    position: relative;
+    height: 10%;
+    width: 10%;
+}
