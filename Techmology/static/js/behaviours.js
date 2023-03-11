@@ -3,4 +3,4 @@ function scrollDown() {
       top: window.innerHeight,
       behavior: 'smooth'
     });
-  }
+}

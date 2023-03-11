@@ -15,8 +15,8 @@
         <div class="navbar">
             <a href="#"><img src="{% static 'img/Logo.png' %}" alt="Logo"></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Store</a></li>
+                <li><a href="{% url 'home:store' %}">Store</a></li>
+                <li><a href="{% url 'home:home' %}">Home</a></li>
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">SandBox</a></li>
                 <li><a href="#">About</a></li> 

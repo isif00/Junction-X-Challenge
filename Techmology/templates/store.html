@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<div class="projects-container">
+    {% for product in products %}
+        <button onclick="window.open('{{ product.link }}', '_blank')" id="project" type="button">
+            <img src="{{ product.image.url }}">
+            <h1>{{ product.title }}</h1>
+            <p>{{ product.description }}</p>
+        </button>
+    {% endfor %}
+</div>
+
+{% endblock %}
