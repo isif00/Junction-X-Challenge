@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = ['junction-x-challenge-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['junction-x-challenge-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://junctionxchallenge.com/']
 # Application definition
 
 INSTALLED_APPS = [
