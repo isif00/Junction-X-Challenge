@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['junction-x-challenge-production.up.railway.app']
-
+CSRF_TRUSTED_ORIGINS = ['junction-x-challenge-production.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
