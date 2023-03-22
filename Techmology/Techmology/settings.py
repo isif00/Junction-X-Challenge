@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
-ALLOWED_HOST = ['*']
+ALLOWED_HOST = ['junction-x-challenge-production.up.railway.app']
 
 # Application definition
 
