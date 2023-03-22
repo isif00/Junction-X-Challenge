@@ -1,6 +1,5 @@
 import os 
 from django.shortcuts import render
-from django.views.decorators.csrf import requires_csrf_token
 from .forms import QuestionForm
 from .models import Products
 from dotenv import load_dotenv
@@ -17,7 +16,6 @@ def store(request):
     context = {'products': products}
     return render(request, 'store.html', context)
 
-@requires_csrf_token
 def home(request):
     form = QuestionForm()
     formatted_response = ''
