@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['junction-x-challenge-production.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://junctionxchallenge.com/']
